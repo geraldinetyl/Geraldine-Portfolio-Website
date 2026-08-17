@@ -2527,36 +2527,38 @@ body.lightbox-open {
 
 
 
-#project-lightbox-video {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 75vh;
+/* LG VIDEO LIGHTBOX FIX */
 
+.lg-project-page .project-lightbox-media {
+  min-height: 560px;
+  height: 75vh;
+  overflow: visible;
+  align-items: center;
+  justify-content: center;
+}
+
+.lg-project-page #project-lightbox-video {
   display: none;
+
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+
   object-fit: contain;
   border-radius: 14px;
-} 
+}
 
-#project-lightbox-video.is-visible {
+.lg-project-page #project-lightbox-video.is-visible {
   display: block;
 }
 
-#project-lightbox-video.is-hidden {
+.lg-project-page #project-lightbox-video.is-hidden {
   display: none;
 }
 
-#project-lightbox-image {
-  display: block;
-}
-
-#project-lightbox-image.is-hidden,
-#project-lightbox-video.is-hidden {
+.lg-project-page #project-lightbox-image.is-hidden {
   display: none;
-}
-
-#project-lightbox-video.is-visible {
-  display: block;
 }
 
 
