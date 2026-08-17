@@ -2859,6 +2859,21 @@ body.lightbox-open {
 }
 
 
+/* =========================
+   LG ELECTRONICS PROJECT
+========================= */
+
+.lg-project-hero img {
+  object-position: center center;
+  transform: scale(1.02);
+}
+
+.lg-card .works-image img {
+  object-position: center center;
+  transform: scale(1.02);
+}
+
+
 
 
 
