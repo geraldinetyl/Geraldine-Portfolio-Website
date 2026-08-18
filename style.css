@@ -2853,9 +2853,9 @@ body.lightbox-open {
 } 
 
 
-
 /* =========================
-   LG PROJECT LIGHTBOX VIDEO FIX
+   LG LIGHTBOX MEDIA FIX
+   show original image/video ratio
 ========================= */
 
 .lg-project-page .project-lightbox-media {
@@ -2867,12 +2867,13 @@ body.lightbox-open {
 
 .lg-project-page #project-lightbox-image,
 .lg-project-page #project-lightbox-video {
-  width: 100%;
-  aspect-ratio: 1 / 1;
+  width: auto;
   height: auto;
+
+  max-width: 100%;
   max-height: 75vh;
 
-  object-fit: cover;
+  object-fit: contain;
   object-position: center center;
 
   border-radius: 14px;
