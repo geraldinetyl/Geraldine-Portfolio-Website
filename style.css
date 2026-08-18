@@ -2570,6 +2570,48 @@ body.lightbox-open {
 }
 
 
+/* =========================
+   LG VIDEO FULL HEIGHT FIX
+========================= */
+
+.lg-project-page .project-lightbox-media {
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+
+  padding: 60px 26px 40px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  overflow: visible !important;
+}
+
+.lg-project-page #project-lightbox-video {
+  display: none;
+
+  width: auto !important;
+  height: auto !important;
+
+  max-width: 100% !important;
+  max-height: calc(100vh - 180px) !important;
+
+  object-fit: contain !important;
+  object-position: center center !important;
+
+  border-radius: 14px;
+  transform: translateY(20px);
+}
+
+.lg-project-page #project-lightbox-video.is-visible {
+  display: block !important;
+}
+
+.lg-project-page #project-lightbox-video.is-hidden {
+  display: none !important;
+}
+
 
 
 
