@@ -2530,27 +2530,35 @@ body.lightbox-open {
 /* LG VIDEO LIGHTBOX FIX */
 
 .lg-project-page .project-lightbox-media {
-  min-height: 560px;
   height: 75vh;
+  min-height: 560px;
   overflow: visible;
+
+  display: flex;
   align-items: center;
   justify-content: center;
+
+  padding: 26px;
 }
 
 .lg-project-page #project-lightbox-video {
   display: none;
 
   width: auto;
-  height: 100%;
+  height: auto;
+
   max-width: 100%;
-  max-height: 100%;
+  max-height: calc(75vh - 70px);
 
   object-fit: contain;
+  object-position: center center;
+
   border-radius: 14px;
 }
 
 .lg-project-page #project-lightbox-video.is-visible {
   display: block;
+  transform: translateY(35px);
 }
 
 .lg-project-page #project-lightbox-video.is-hidden {
