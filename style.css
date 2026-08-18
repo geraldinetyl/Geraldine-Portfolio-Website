@@ -2892,12 +2892,6 @@ body.lightbox-open {
   display: block;
 }
 
-.lg-project-page #project-lightbox-video[src*="03 Fb Ha Live1 Video Junw1 Lock In Farm-Fresh Goodness"] {
-  max-height: calc(75vh - 35px);
-  transform: translateY(18px);
-}
-
-
 
 
 
